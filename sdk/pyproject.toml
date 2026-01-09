@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "auracle"
+version = "0.1.0"
+description = "Auracle Python SDK for Solana SVM execution oracle."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "solana>=0.30.0",
+    "solders>=0.20.0",
+    "borsh-construct>=0.1.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["auracle*"]
+
